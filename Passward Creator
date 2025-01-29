@@ -1,0 +1,35 @@
+#Password creator
+import random           
+
+print("Welcome to the Password Generator!")
+print("How many letters would you like in your password?")
+a = int(input("-->"))
+print("How many symbols do you want?")
+b = int(input("-->"))
+print("How many numbers do you want?")
+c = int(input("-->"))
+
+lett = ['a','A','b','B','c','C','d','D','e','E','f','F','g','G','h','H','i','I','j','J','k','K','l','L','m','M','n','N','o','O','p','P','q','Q','r','R','s','S','t','T','u','U','v','V','w','W','x','X','y','Y','z','Z']
+sym = ['!','@','#','$','%','^','&','*','(',')','_','+','~',':','<','>','?','/','|','{','}']
+num = ['1','2','3','4','5','6','7','8','9','0']
+
+l1=[]
+for i in range(1,a+1):
+    d = random.choice(lett)
+    x = l1.append(d)
+
+l2=[]
+for i in range(1,b+1):
+    e = random.choice(sym)
+    y = l2.append(e)
+
+l3=[]
+for i in range(1,c+1):
+    f = random.choice(num)
+    z = l3.append(f)
+
+j = l1+l2+l3
+v = j.copy()
+random.shuffle(v)
+k = "".join(v)
+print("Your Passward is:",k)
