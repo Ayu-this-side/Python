@@ -5,8 +5,7 @@ b = input("Type your message: ").upper()
 
 c =int(input("Type the shift number: "))
 
-list1=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','y','Y','Z']
-#while n!=0:
+list1=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 if a=='Encrypt':
     for i in b:
         if i in list1:
